@@ -17,8 +17,7 @@ This wiki includes the explanation of the above-mentioned steps for the problem 
 
 In order to introduce the general physics of the flow in a circular pipe start with the general Navier-Stokes equation as follows:
 
-<img src="http://faculty.washington.edu/teymourj/sfo-project/lex-smits-8.2.png" width="200">
-
+<img src="./imgs/lex-smits-8.2.png" width="200">
 
 Assume a streamwise flow (2D), laminar and steady flow in the pipe. Then the general Navier-Stokes equation will be simplified to:
 
