@@ -25,15 +25,21 @@ It should also be highlighted that this velocity contour is smooth. The smoothne
 
 After performing the general post-processing steps, the user need to perform more detail oriented post-processing to confirm the general validity of the CFD simulation. This stage can be a state-of-the-art. Comparing the numerical results against the theory (discussed earlier) or any other available experimental results is the final stage of post-processing. It is extremely important to calculate the correct corresponding numerical variables and compare them against the experimental or other numerical data.
 
-In order to visualize the evolution of the velocity along the flow one should look at the velocity magnitude at different stations downstream the pipe. Since the flow is axi-symmetric each station is defined as a vertical line at different distances downstream the pipe. One can use `surface/line-surface` command to enter the start and end point of each measurment station as shown in the following table, where D is the distance downstream in terms of diameter:
+In order to visualize the evolution of the velocity along the flow one should look at the velocity magnitude at different stations downstream the pipe. Since the flow is axi-symmetric each station is defined as a vertical line at different distances downstream the pipe. One can use `surface/line-surface` command to enter the start and end point of each mesurment station as shown in the following table, where D is the distance downstream in terms of diameter:
 
 x0 (m) = x*D   , y0 (m) = 0 , z0 (m)=  0.05
 x1 (m) = x*D   , y1 (m) = 0 , z1 (m)=  -0.05
 
-Use of `<this command>` would export the velocity values along each pre-defined station into a text file <link here>. Using a simple script (e.g. Python post-processing script) one can compare the numerical and theoretical results as shown in figure:
+Use of `<this command>` would export the velocity values along each pre-defined station into a text file <link here>. Using a simple script (e.g. pre-written Python script) one can visualize the exported numerical results as shown in figure:
 
-<img src="./Images/CFD_domain_halve_vol_mesh.png" width="235">
+<img src="./Images/velocity_profiles.png" width="600">
 
-Figure visualize that at X diameter downstream the pipe numerically predicted velocity profile matches the theoretically calculated velocity ones. This confirms the validity of the developed CFD-simulation to predict the flow behavior in a circular pipe.
+Figure 7 visualize the numerically predicted velocity profiles along the pipe at 1, 3, 25 and 45 diameters downstream. These results show that velocity evolves along the pipe, during the entrance length and become fully developed. As shown in figure 7 velocity profiles at 25 and 45 diameter downstream perfectly match each other. This confirms the fully developed velocity field.
 
-The post-processing script to written in Python can be downloaded here. As a practice try to figure out how the entrance length of the pipe is predicted using numerical solutions and how well it is compared against theoritical definition of the entrance length?
+As the final step for validation one can compare the numerically predicted fully developed velocity profile against the theoretically derived equation parabolic velocity profile. This step is also implemented in the pre-written python scrip.
+
+<img src="./Images/velocity_profiles_comparison.png" width="600">
+
+Figure 8 visualizes a comparison between the numerical and theoretical results for the fully developed velocity profiles at 25D downstream. As shown in this figure numerical results perfectly matches the theoretical results.
+
+At this stage one can conclude that this CFD numerical simulation is validated to study laminar flow in circular pipes. Therefore, it can be used for similar or more complex problems, such as flow with specified pressure gradient, non-uniform velocity profiles and etc.. This can be done via correct implementation in changing the corresponding boundary conditions.
