@@ -27,7 +27,7 @@ would lead into a determined system of two equations and two unknowns and gives 
 
 In this equation K' is the only undefined variable. Considering the average velocity across the cross section of the duct one can write:
 
-<img src="./Images/lex-smits-8.16.png" width="200">
+<img src="./Images/lex-smits-8.16.png" width="400">
 
 As a result of this algebraic manipulation the general form of velocity profile and pressure gradient across the pipe will be as follows:
 

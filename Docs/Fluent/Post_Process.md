@@ -18,7 +18,7 @@ x2 (m) = 0.5 , y0 (m) = 0 , z0 (m)= -0.05
 
 Once the plane is created one should define the normalized variable of interest. To define the normalized streamwise velocity, by the inlet velocity we will have `define/custom-field-functions/define`, name your variable (i.e. normalized_streamwise_velocity) and put the following formula `x_velocity/0.01`. This will calculate the normalized streamwise velocity within the CFD domain. At this stage the command `display/contour/normalized_streamwise_velocity` will ask you for a range (i.e. [0,2]) and visualizes the velocity contours for you as shown in figure 6:
 
-<img src="./Images/Velocity_cont.png" width="500" align="middle">
+<img src="./Images/velocity_cont.png" width="500" align="middle">
 
 As shown in this figure, the flow enters the domain with normalized velocity of 1. Due to the imposed no slip boundary conditions on the pipe's walls, the velocity instantly decrease to zero at this region. Due to this extreme change of momentum within the vertical direction there is going to be a region at the entrance of the pipe where the flow evolves in the streamwise direction. This specific length is referred to as the entrance length. After the entrance length the velocity profile becomes fully developed and uniform to the end of the channel.
 It should also be highlighted that this velocity contour is smooth. The smoothness confirms the validity of created mesh resolution and convergence of the numerical solution. However, this is an additional necessary, but not sufficient criteria for simulation validity and convergence.
@@ -30,7 +30,7 @@ In order to visualize the evolution of the velocity along the flow one should lo
 x0 (m) = x*D   , y0 (m) = 0 , z0 (m)=  0.05
 x1 (m) = x*D   , y1 (m) = 0 , z1 (m)=  -0.05
 
-Use of `<this command>` would export the velocity values along each pre-defined station into a text file <link here>. Using a simple script (e.g. pre-written Python script) one can visualize the exported numerical results as shown in figure:
+Now one can open a file via `plot/file-set/plot-to-file` and define a name for it (e.g. velocity_field_140000_elements.txt). Using the command `plot/solution`, choose the variable of interest and write it from the created surfaces above. This would export the velocity values along each pre-defined station into a text file. Using a simple script (e.g. pre-written Python script <Add download link here>) one can visualize the exported numerical results as shown in figure:
 
 <img src="./Images/velocity_profiles.png" width="600">
 
