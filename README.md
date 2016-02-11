@@ -1,6 +1,6 @@
 # Flow in Circular Pipe Laminar
 
 ## Wiki
-- [START-CCM+](https://github.com/ardeshirj/flow-in-circular-pipe-laminar/wiki/STAR-CCM-Plus)
-- [FLUENT](https://github.com/ardeshirj/flow-in-circular-pipe-laminar/wiki/Fluent)
-- [OpenFOAM](https://github.com/ardeshirj/flow-in-circular-pipe-laminar/wiki/OpenFOAM)
+- [STAR-CCM+](https://github.com/teymourj/flow-in-circular-pipe-laminar/tree/master/docs/Star-CCM-Plus)
+- [FLUENT](https://github.com/teymourj/flow-in-circular-pipe-laminar/tree/master/docs/Fluent)
+- [OpenFOAM](https://github.com/teymourj/flow-in-circular-pipe-laminar/tree/master/docs/Open_Foam)
