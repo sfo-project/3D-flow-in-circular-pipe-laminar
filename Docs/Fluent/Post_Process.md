@@ -10,11 +10,11 @@ Figure 4 visualizes the residual values of continuity and streamwise velocity ve
 The second step is to visualize dimensionless form of the important variables within the CFD domain. This step can be problem specific and should be done on an adequate plane of choice. For most of the problems contour of normalized velocity or pressure is on a horizontal or vertical plane at the center of the CFD domain is a good start point.
 The path to define an adequate plane is `surface/plane-bounded`. This command will ask for coordinate of three different points within the domain to create the plane. For the current CFD domain to define a vertical plane from inlet to 5D downstream the coordinates will be as follows:
 
-x0 (m) = 0   , y0 (m) = 0 , z0 (m)=  0.05
-
-x1 (m) = 0   , y1 (m) = 0 , z0 (m)= -0.05
-
-x2 (m) = 0.5 , y0 (m) = 0 , z0 (m)= -0.05
+|x|y|z
+---|---|---|---
+Point 1|0|0|0.05
+Point 2|0|0|-0.05
+Point 3|0.5|0|0.05
 
 Once the plane is created one should define the normalized variable of interest. To define the normalized streamwise velocity, by the inlet velocity we will have `define/custom-field-functions/define`, name your variable (i.e. normalized_streamwise_velocity) and put the following formula `x_velocity/0.01`. This will calculate the normalized streamwise velocity within the CFD domain. At this stage the command `display/contour/normalized_streamwise_velocity` will ask you for a range (i.e. [0,2]) and visualizes the velocity contours for you as shown in figure 6:
 
