@@ -6,8 +6,12 @@ The CFD domain for the laminar flow in a circular pipe is a finite three dimensi
 
 To create the geometry of the visualized CFD domain in figure <ref. figure 1>, it is recommended to start with a circular face divided into four equal parts/pies as four different faces. Then extrude each part/pie by the measure of pipe's length. This initial geometry discretization provides more controllability one future CFD domain discretization.
 
-<img src="./Images/CFD_domain_full.png" width="500">
-<put caption 1: Isometric view of the the CFD domain of the laminar flow in a circular pipe.>
+<figure>
+  <img src="./Images/CFD_domain_full.png" width="500">
+  <figcaption>
+    Fig.1 - Isometric view of the the CFD domain of the laminar flow in a circular pipe.
+  </figcaption>
+</figure>
 
 After the CFD domain is created, it should be discretized into finite volumes (a.k.a meshing). Technically, meshing is the process of "chopping" it into small finite elements and/or volumes, wherein the flow field's governing equations will be solved numerically. high quality mesh elements lead to a smooth and promising numerical solution. Therefore, it is important to increase the level of controllability on the raw geometry from the first step by using helping surfaces on the raw geometry of the CFD domain. For example in this problem to increase the level of controllability on the meshing process, the cylinder was divided into four identical sub-sections, as shown in figure <ref. figure 2>. This large discretization would provide full controllability for the future meshing or re-meshing process.
 
