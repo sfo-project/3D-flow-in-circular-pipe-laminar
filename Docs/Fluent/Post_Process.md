@@ -10,7 +10,7 @@ Figure 4 visualizes the residual values of continuity and streamwise velocity ve
 The second step is to visualize dimensionless form of the important variables within the CFD domain. This step can be problem specific and should be done on an adequate plane of choice. For most of the problems contour of normalized velocity or pressure is on a horizontal or vertical plane at the center of the CFD domain is a good start point.
 The path to define an adequate plane is `surface/plane-bounded`. This command will ask for coordinate of three different points within the domain to create the plane. For the current CFD domain to define a vertical plane from inlet to 5D downstream the coordinates will be as follows:
 
-|x|y|z
+ |x|y|z
 ---|---|---|---
 Point 1|0|0|0.05
 Point 2|0|0|-0.05
