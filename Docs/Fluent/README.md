@@ -1,6 +1,8 @@
 # Fluent
 A general methodological/scientific approach to develop a CFD simulation case via ANSYS FLUENT for laminar flow in a circular pipe is explained and discussed here.
 
+<img src="./Images/cover_photo.png" width="500">
+
 The four major steps to develop a CFD simulation case for any fluid mechanics consists the following four steps:
 
 1. **[CFD Problem's Physics & Theory](https://github.com/teymourj/flow-in-circular-pipe-laminar/blob/master/Docs/Fluent/Physics.md)**
