@@ -1,5 +1,5 @@
 # Fluent
-A general methodological/scientific approach to develop a CFD simulation case via ANSYS FLUENT for laminar flow in a circular pipe is explained and discussed here.
+A general methodological/scientific approach to develop and process a CFD simulation in ANSYS FLUENT for 3D laminar flow in a circular pipe is explained and discussed here.
 
 <img src="./Images/cover_photo.png" width="500">
 

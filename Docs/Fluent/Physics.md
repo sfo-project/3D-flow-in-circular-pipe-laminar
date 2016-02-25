@@ -12,12 +12,12 @@ This equation indicates that the material derivative of the velocity field (i.e.
 
 <img src="./Images/lex-smits-8.2.png" width="200">
 
-Once the flow enters the pipe due to the no slip boundary conditions at the walls of the pipe fluid velocity will instantly become zero. This results into a strong velocity gradient across the entrance of the pipe and strongly effects the velocity field of the incoming flow. In this region the flow field behavior is complex and flow is three dimensional. Moving further downstream the velocity gradient becomes smoother, velocity profile get a parabolic shape and the flow becomes fully developed. This short region is referred to as the "entrance region". The length of this region for laminar flows is experimentally related to the Reynolds number:
+Once the flow enters the pipe due to the no slip boundary conditions at the walls of the pipe fluid velocity will instantly become zero. This results into a strong velocity gradient across the entrance length of the pipe and strongly effects the velocity field. This interaction between fluid element and solid walls forms a thin layer called Boundary Layer close to the walls of the pipe. In this region the flow field behavior is complex and flow is three dimensional. Moving further downstream the two boundary layers merge with each other and the velocity gradient becomes smoother. The velocity profile get a parabolic shape and the flow becomes "fully developed". This short region is referred to as the "entrance region". The length of this region for laminar flows is experimentally related to the Reynolds number:
 
 <img src="./Images/lex-smits-8.2.1.png" width="200">
 
 
-For a fully developed flow, it can be assumed that velocity and pressure field variation in any directions other that the streamwise direction (i.e. x-direction in this problem) will become negligible. Therefore, the Navier-Stokes equation can be further reduced to:
+For a fully developed flow, it can be assumed that velocity and pressure field variation in any directions other than the streamwise direction (i.e. x-direction in this problem) will become negligible. Therefore, the Navier-Stokes equation can be further reduced to:
 
 <img src="./Images/lex-smits-8.3.png" width="200">
 
