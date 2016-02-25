@@ -5,6 +5,23 @@
 > **_In simple words: Current tutorial teaches users to fish, rather than giving them a fish._**
 
 ## Setting up a CFD simulation has following four steps:  
+The summary of the steps to take for CFD simulation setup for problem of laminar flow in a circular pipe are as follows:
+
+ 1-  `/define/models/steady`   
+ 2-  `/define/models/solver/pressure-based`    
+ 3-  `/define/models/viscous/laminar`    
+ 4-  `/define/material/change-create`    
+ 5-  `/define/boundary-conditions/fluid`   
+ 6-  `/define/boundary-conditions/velocity-inlet`    
+ 7-  `/define/boundary-conditions/pressure-outlet`   
+ 8-  `/define/boundary-conditions/wall`    
+ 9-  `solve/set/discretization-schem`    
+ 10- `solve/set/under-relaxation`   
+ 11- `/solve/initialize/compute-defaults/velocity-inlet`    
+ 12- `solve/iterate`
+
+Following is the step-by-step explanation for each of the above command/setting procedure. It should be noted that the path for defining conditions and other settings that are provided in `command line` format. Users can access exact same settings and options by following the provided path via the tree of progress or pull down menu in ANSYS FLUENT.
+
 1. ###### Setup Model/s:   
 According to the physics of the flow field user will select required model/s to simulate the flow.
 
