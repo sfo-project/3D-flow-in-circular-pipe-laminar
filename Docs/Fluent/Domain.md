@@ -1,6 +1,6 @@
 # CFD Domain's Creation & Discretization
 
-**After the review of physics and theory behind the problem of interest, to simulate and study the flow field first a CFD/Computational domain should be created. This CFD domain is discretized into small finite elements (2D) or finite volumes (3D). The flow field's governing equations are then solved numerically inside these elements or volumes via an iterative process till a converged solution inside the CFD domain is obtained. This section explains the process of creation and discretization of CFD domain for the problem of interest.**
+**The next step for developing the CFD simulation for a case study, after the review of physics and theory behind the problem of interest, is to create the CFD/Computational domain. This CFD domain is discretized into small finite elements (2D) or finite volumes (3D). The flow field's governing equations are then solved numerically inside these elements or volumes via an iterative process till a converged solution inside the CFD domain is obtained. This section explains the process of creation and discretization of the CFD domain for the problem of interest.**
 
 The CFD domain for the laminar flow in a circular pipe is a finite three dimensional cylinder with a circular cross section as shown in Fig.1. The dimensions of this pipe such as length and diameter is defined according to the problem definition. For this specific problem the ratio of length to diameter is chosen to be 50 (i.e. L = 5 [m] , D = 0.1 [m]). This ratio guarantees a CFD domain with reasonable number of of mesh elements. Furthermore, it will be long enough to simulate various aspects of the flow field as it evolves along the entrance length and becomes fully developed.
 
@@ -40,4 +40,4 @@ One the mesh is generated it's quality should be examined. This can be done usin
 
 
 
-> The complete mesh file (.msh) can be downloaded here [Download Mesh Here!](link)
+<The complete mesh file (.msh) can be downloaded here [Download Mesh Here!](link)>
